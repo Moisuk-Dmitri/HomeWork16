@@ -1,39 +1,14 @@
-public class Car implements Vehicle {
-
-    private String modelName;
-    private int wheelsCount;
-
-    public Car() {
-        modelName = "";
-        wheelsCount = 0;
-    }
+public class Car extends Vehicle {
 
     public Car(String modelName, int wheelsCount) {
-        this.modelName = modelName;
-        this.wheelsCount = wheelsCount;
+        super(modelName, wheelsCount);
     }
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    public Car() {
+        super(null, 0);
     }
 
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
-    }
-
-    public String getModelName() {
-        return modelName;
-    }
-
-    public void setModelName(String modelName) {
-        this.modelName = modelName;
-    }
-
-    public int getWheelsCount() {
-        return wheelsCount;
-    }
-
-    public void setWheelsCount(int wheelsCount) {
-        this.wheelsCount = wheelsCount;
     }
 }
