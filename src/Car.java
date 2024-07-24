@@ -7,8 +7,4 @@ public class Car extends Vehicle {
     public Car() {
         super(null, 0);
     }
-
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
 }
