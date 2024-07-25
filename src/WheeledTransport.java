@@ -1,8 +1,8 @@
-public abstract class Vehicle {
+public abstract class WheeledTransport {
     private String modelName;
     private int wheelsCount;
 
-    public Vehicle(String modelName, int wheelsCount) {
+    public WheeledTransport(String modelName, int wheelsCount) {
         this.modelName = modelName;
         this.wheelsCount = wheelsCount;
     }
@@ -21,5 +21,9 @@ public abstract class Vehicle {
 
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
+    }
+
+    public void updateTyre() {
+        System.out.println("Меняем покрышку");
     }
 }
